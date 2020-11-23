@@ -1,0 +1,84 @@
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=5 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=4 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=3 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=2 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=1 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=0 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=-5 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=-4 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=-3 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=-2 ]
+
+// Identificação de anomalias de clima/vegetação através do tamanho do salto dos estados da seca
+R{"densidade_vegetacao"}=? [ F estado_classe_atual_r1-estado_classe_anterior_r1=-1 ]
+
+// Quantidade de caramujos em condições de baixa seca (estado 1) e precipitação acumulada de média a alta
+R{"quantidade_caramujos"}=? [ F estado_classe_atual_r1=1&precipitacao_acumulada>=0.33 ]
+
+// Quantidade de caramujos em condições de baixa seca (estado 1) e precipitação acumulada de média a alta
+R{"quantidade_caramujos"}=? [ F estado_classe_atual_r1=2&precipitacao_acumulada>=0.33 ]
+
+// Quantidade de caramujos em condições de baixa seca (estado 1) e precipitação acumulada de média a alta
+R{"quantidade_caramujos"}=? [ F estado_classe_atual_r1=3&precipitacao_acumulada>=0.33 ]
+
+// Quantidade de caramujos em condições de baixa seca (estado 1) e precipitação acumulada de média a alta
+R{"quantidade_caramujos"}=? [ F estado_classe_atual_r1=4&precipitacao_acumulada>=0.33 ]
+
+// Quantidade de caramujos em condições de baixa seca (estado 1) e precipitação acumulada de média a alta
+R{"quantidade_caramujos"}=? [ F estado_classe_atual_r1=5&precipitacao_acumulada>=0.33 ]
+
+P=? [estado_classe_atual_r1 < 5 U<=10 estado_classe_atual_r1=5 ]
+
+P=? [estado_classe_atual_r1 < 5 U<=20 estado_classe_atual_r1=5 ]
+
+P=? [estado_classe_atual_r1 < 5 U<=30 estado_classe_atual_r1=5 ]
+
+P=? [estado_classe_atual_r1 < 5 U<=60 estado_classe_atual_r1=5 ]
+
+P=? [estado_classe_atual_r1 < 5 U<=120 estado_classe_atual_r1=5 ]
+
+P=? [estado_classe_atual_r1 < 5 U<=240 estado_classe_atual_r1=5 ]
+
+P=? [F = 1 estado_classe_atual_r1=5]
+
+P=? [F = 2 estado_classe_atual_r1=5]
+
+P=? [F = 3 estado_classe_atual_r1=5]
+
+P=? [F = 4 estado_classe_atual_r1=5]
+
+P=? [F = 5 estado_classe_atual_r1=5]
+
+P=? [F = 6 estado_classe_atual_r1=5]
+
+P=? [F = 7 estado_classe_atual_r1=5]
+
+P=? [F = 8 estado_classe_atual_r1=5]
+
+P=? [F = 9 estado_classe_atual_r1=5]
+
+P=? [F = 10 estado_classe_atual_r1=5]
+
+P>=1 [G F ( estado_classe_atual_r1=4 & (X estado_classe_atual_r1=5)) ]
+
+P =? [(F estado_classe_atual_r1=0) & (G estado_classe_atual_r1=5)]
+
