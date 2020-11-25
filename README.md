@@ -23,7 +23,5 @@ Para carregar um modelo (formato .pm), basta:
 	
 		> model > open model
 
-Para simular o modelo
-	
-		> Simulator > 
+
 
